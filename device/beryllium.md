@@ -1,0 +1,116 @@
+## Tiramisu 3
+- device: overlay: Adjust status bar padding
+- device: Import perf configs from qcom/common
+- device: parts: Remove thermal tile
+- device: parts: Add support for the predictive back gesture
+- device: Set kernel target level to 4
+- device: overlay: Change wifi tether ssid default to POCO F1
+- device: Add custom init to override properties
+- device: Remove some google packages at build time
+- device: Add missing FCM
+- device: Fix some selinux denials
+- vendor: Sync with device tree
+- kernel: qcacld-5.0: Fix the possible OOB write in country IE unpack
+- kernel: BACKPORT: disp: msm: dsi: add null pointer check in dsi_display_dev_remove
+- kernel: UPSTREAM: HID: core: zero-initialize the report buffer
+- kernel: msm: kgsl: Remove POPP
+- kernel: arm64: configs: Enable Block IO Controller
+- kernel: Revert "- kernel: Use the stock xiaomi-sdm845 config for /proc/config.gz"
+- kernel: arm64: configs: Disable CONFIG_LOCALVERSION_AUTO
+- kernel: diag: Fix compilation error with new sdclang 12
+- kernel: smcinvoke : Make sure tzhandle is set before f frees
+- kernel: msm: mdp3: fix the use after free problem
+- kernel: fbdev: msm: check for valid fence before using objects
+- kernel: drm/vgem: Close use-after-free race in vgem_gem_create
+- kernel: BACKPORT: can: usb_8dev: usb_8dev_start_xmit(): fix double dev_kfree_skb() in error path
+- kernel: UPSTREAM: f2fs: fix UAF in f2fs_available_free_memory
+- kernel: BACKPORT: f2fs: allow to change discard policy based on cached discard cmds
+- kernel: BACKPORT: tee: handle lookup of shm with reference count 0
+- kernel: ANDROID: dm-bow: Protect Ranges fetched and erased from the RB tree
+- kernel: diag: Sanitize the mempools with pool data size check
+- kernel: ANDROID: usb: gadget: f_accessory: Mitgate handling of non-existent USB request
+- kernel: UPSTREAM: ALSA: usb-audio: Fix a DMA to stack memory bug
+- kernel: UPSTREAM: ALSA: usb-audio: Fix potential out-of-bound accesses for Extigy and Mbox devices
+- kernel: UPSTREAM: USB: media: uvcvideo: Skip parsing frames of type UVC_VS_UNDEFINED in uvc_parse_format
+- kernel: msm: camera: sensor: TOCTOU error handling
+- kernel: ARM64: vdso32: Hardcode toolchain target
+- kernel: ARM64: dts: msm: disable memcg kernel and socket accounting on sdm845
+- kernel: dsp: q6voice: Switch to __builtin_add_overflow
+- kernel: audio-kernel: Merge tag LA.UM.8.3.c25-09700-sdm845.0
+- kernel: qca-wifi-host-cmn: Merge tag LA.UM.8.3.c25-09700-sdm845.0
+- kernel: Merge tag LA.UM.8.3.c25-09700-sdm845.0
+- kernel: Revert "soc: qcom: smem: Add boundary checks for partitions"
+- kernel: adsprpc: Handle UAF scenario in put_args
+- kernel: msm: adsprpc: Handle UAF in fastrpc internal munmap
+- kernel: msm: adsprpc: Clean DMA handles maps in case of  error
+- kernel: kconfig/lxdialog: Make main() return 0
+- kernel: qcacld-3.0: Remove use-after-free of frame in tx mgmt send
+- kernel: BACKPORT: PM / core: Add support to skip power management in device/driver model
+- kernel: msm: adsprpc: use-after-free (UAF) in global maps
+- kernel: BACKPORT: net: fix __dst_negative_advice() race
+- kernel: qcacmn: Fix out of bound read issue in ESP ie parse
+- kernel: memshare: Prevent possible integer overflow
+- kernel: Revert "BACKPORT: memshare: Prevent possible integer overflow"
+- kernel: BACKPORT: ASoC: msm-pcm-q6-v2: Add dsp buf check
+- kernel: asoc: Update copy_to_user to requested buffer size
+- kernel: asoc: msm-pcm-q6-v2: Update memset for period size
+- kernel: asoc: Reset the buffer if size is partial or zero
+- kernel: af_unix: Suppress false-positive lockdep splat for spin_lock() in __unix_gc().
+- kernel: af_unix: fix lockdep positive in sk_diag_dump_icons()
+- kernel: UPSTREAM: af_unix: Fix garbage collector racing against connect()
+- kernel: UPSTREAM: af_unix: Do not use atomic ops for unix_sk(sk)->inflight.
+- kernel: UPSTREAM: af_unix: Fix null-ptr-deref in unix_stream_sendpage().
+- kernel: Revert "msm: vidc: Dynamic resolution crop enable for SDM845"
+- kernel: iommu: Fix missing return check of arm_lpae_init_pte
+- kernel: BACKPORT: memshare: Prevent possible integer overflow
+- kernel: arm64: mm: Update perf accounting to handle poison faults
+- kernel: arm64: hwpoison: add VM_FAULT_HWPOISON[_LARGE] handling
+- kernel: coresight: Fix clang 14.x forbidden warnings/errors
+- kernel: ASoC: wcd_cpe_core: Fix buffer overflow in wcd_cpe_init
+- kernel: ASoC: wcd_cpe: Fix enum-conversion warnings
+- kernel: sched: do not return error when set the same sched_boost value
+- kernel: dsp: q6lsm: Address use after free for mmap handle
+- kernel: ASoC: msm-pcm-host-voice: Check validity of session idx
+- kernel: regulator: Fix error checking for debugfs_create_dir
+- kernel: msm: kgsl: Prevent wrap around during user address mapping
+- kernel: msm: adsprpc: Handle UAF in fastrpc internal munmap
+- kernel: msm: vidc: fix error during debugfs init
+- kernel: arm64: configs: debugfs.config: Disable MSM_IDLE_STATS & PAGE_EXTENSION
+- kernel: defconfig: msm: Add config fragment for DEBUG_FS disablement
+- kernel: ANDROID: Remove VLA from uid_sys_stats.c
+- kernel: ANDROID: arch:arm64: Increase kernel command line size
+- kernel: UPSTREAM: f2fs: fix deadlock in i_xattr_sem and inode page lock
+- kernel: ASoC: msm-pcm-voip: Avoid interger underflow
+- kernel: ASoC: msm-pcm-host-voice: Address buffer overflow in hpcm copy
+- kernel: sched/tune: Increase the cgroup limit to 8
+- kernel: sched/tune: fix suspicious RCU usage warning
+- kernel: BACKPORT: qcacld-3.0: Ignore CSA request for invalid channel
+- kernel: nl80211: add WPA3 definition for SAE authentication
+- kernel: usb: dwc3: Handle charging behavior when usb data is disabled
+- kernel: usb: dwc3: Set the initial value of usb_data_enabled before use
+- kernel: usb: new attributes implementation to enable/disable usb data
+- kernel: icnss: Fix enum-conversion warning from Clang
+- kernel: qca-wifi-host-cmn: Add void keyword to old-style zero prototype functions
+- kernel: qcacld-3.0: Fix compile error of mdie
+- kernel: power: qpnp-smb2: Implement battery charging_enabled node
+- kernel: ASoC: msm-pcm-q6-v2: Add dsp buf check
+- kernel: qcacld-3.0: Fix OOB in wma_scan_roam.c
+- kernel: msm: msm_bus: Remove trace_printk for non-debug build
+- kernel: Revert "ASoC: ops: Fix the bounds checking in snd_soc_put_volsw_sx and snd_soc_put_xr_sx"
+- kernel: techpack: audio: Update SOC_SINGLE_SX_TLV to SOC_SINGLE_S8_TLV
+- kernel: ALSA: control: use counting semaphore as write lock for ELEM_WRITE operation
+- kernel: ALSA: control: Fix memory corruption risk in snd_ctl_elem_read
+- kernel: ALSA: control: code refactoring for ELEM_READ/ELEM_WRITE operations
+- kernel: ALSA: pcm: Move rwsem lock inside snd_ctl_elem_read to prevent UAF
+- kernel: ANDROID: usb: f_accessory: Check buffer size when initialised via composite
+- kernel: msm: kgsl: Make sure that pool pages don't have any extra references
+- kernel: msm: kgsl: Use dma_buf_get() to get dma_buf structure
+- kernel: msm: kgsl: Remove 'fd' dependency to get dma_buf handle
+- kernel: msm: kgsl: Fix gpuaddr_in_range() to check upper bound
+- kernel: msm: ADSPRPC: Restrict untrusted applications from attaching to GuestOS
+- kernel: net: ipc_router: Add bounds check on tx path
+- kernel: soc: qcom: glink: wait for tx blocked signal response
+- kernel: UPSTREAM: wireguard: do not use -O3
+- kernel: Revert "add toggle for disabling newly added USB devices"
+- kernel: regulator: qpnp: fix memory leak when probe failed
+- kernel: drivers: fts_521: Always allow UDFPS sensing
