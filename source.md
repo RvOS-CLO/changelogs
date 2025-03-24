@@ -9,3 +9,6 @@
 - Use stock android boot animation
 - Remove Abstruct
 - Redesign About Phone UI
+- Redesign Homepage UI
+- Redesign Firmware UI
+- Add a toggle to force LTE_CA
