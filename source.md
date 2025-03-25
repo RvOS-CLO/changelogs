@@ -12,3 +12,6 @@
 - Redesign Homepage UI
 - Redesign Firmware UI
 - Add a toggle to force LTE_CA
+- Redesign switch component to better align with the OxygenOS (OOS) design style.
+- Implement preference category UI changes
+

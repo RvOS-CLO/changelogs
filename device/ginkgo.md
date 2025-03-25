@@ -1,0 +1,28 @@
+## Tiramisu 3
+- device: fingerprint: use libhidlbase-v32 for goodix
+- device: Move to QTI health AIDL service
+- device: power: Implement extension for LOW_POWER mode
+- device: Switch to power modes extension for battery saver
+- device: Boost GPU to max for expensive rendering
+- device: rootdir: Drop QTI USB module.
+- device: Import and switch to CLO lights HAL
+- device: Enable DT2W screen-off gesture
+- device: Switch Perf, BT, Vibrator, AV, USB, Display, WFD, Alarm, Adreno, GPS, Telephony, Wlan to QTI component
+- device: Add support Miuicamera
+- device: Add QTI Memory Optimization
+- device: Switch to Dynamic Partition FBE V2 Encryption
+- device: Disable phantom process monitoring
+- device: Implement keyhandler for fingerprint shutter
+- device: Address more Sepolicy Denial
+- device: Update Certificate Authority Blobs from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+- device: Update ADSP/Modules - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+- device: Update CDSP Blobs from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+- device: Update Configstore Blobs from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+- device: Update FM vendor Blobs from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+- device: Update Time Blobs from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+- device: Update Trusted User Interface Blobs from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+- device: Update Listen Blobs from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+- device: Update Peripheral Blobs from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
+- device: change xiaomi parts packages
+- device: Checkour GPS Config from stock
+- device: Change camera to ANX Camera
