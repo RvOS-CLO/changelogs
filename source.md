@@ -14,4 +14,6 @@
 - Add a toggle to force LTE_CA
 - Redesign switch component to better align with the OxygenOS (OOS) design style.
 - Implement preference category UI changes
+- Add support for per-app volume
+- Relayout summary card in about phone and firmware info
 

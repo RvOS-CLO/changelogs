@@ -10,7 +10,6 @@
 - device: Switch Perf, BT, Vibrator, AV, USB, Display, WFD, Alarm, Adreno, GPS, Telephony, Wlan to QTI component
 - device: Add support Miuicamera
 - device: Add QTI Memory Optimization
-- device: Switch to Dynamic Partition FBE V2 Encryption
 - device: Disable phantom process monitoring
 - device: Implement keyhandler for fingerprint shutter
 - device: Address more Sepolicy Denial
@@ -26,3 +25,20 @@
 - device: change xiaomi parts packages
 - device: Checkour GPS Config from stock
 - device: Change camera to ANX Camera
+- device: Fix screenrecord lag
+- device: Use HintManager for HWUI
+- device: Inherit several Android Go configurations
+- device: Use speed tuning for performance critical applications
+- device: Always preopt extracted APKs
+- device: Disable client composition cache
+- device: Enable config_avoidGfxAccel
+- device: Enable performant auth feature
+- device: Disable Skia tracing by default
+- device: Update multiple vibration intensity levels config for A13
+- device: Improve battery backup
+- device: Disable VSync for CPU rendered apps
+- device: Disable dexpreopt minidebuginfo
+- device: Disable ART debug and optimize dexpreopt
+- device: Add fling prop for smoother scrolling and better responsiveness
+- device: bring back to non dynamic partition
+- kernel: switch to QuickSilver kernel
